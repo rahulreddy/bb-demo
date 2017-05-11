@@ -1,17 +1,17 @@
 # create bucket
-aws s3api create-bucket --bucket demo --endpoint http://localhost:8000
+aws s3api create-bucket --bucket bakery --endpoint http://localhost:8000
 
 # enable versioning
-aws s3api put-bucket-versioning --bucket demo --versioning-configuration Status=Enabled --endpoint http://localhost:8000
+aws s3api put-bucket-versioning --bucket bakery --versioning-configuration Status=Enabled --endpoint http://localhost:8000
 
 # enable replication
-aws s3api put-bucket-replication --bucket demo --replication-configuration  file://replication.json --endpoint http://localhost:8000
+aws s3api put-bucket-replication --bucket bakery --replication-configuration  file://replication.json --endpoint http://localhost:8000
 
 # put object
-aws s3api put-object --bucket demo --key foo --body ./TESTDATA --endpoint http://localhost:8000
+aws s3api put-object --bucket bakery --key foo --body ./TESTDATA --endpoint http://localhost:8000
 
 # head object
-aws s3api head-object --bucket demo --key foo --endpoint http://localhost:8000
+aws s3api head-object --bucket bakery --key foo --endpoint http://localhost:8000
 
 # list objects
-watch -n1 aws s3api list-objects --bucket demo --endpoint http://localhost:8000
+watch -n1 aws s3api list-objects --bucket bakery --endpoint http://localhost:8000

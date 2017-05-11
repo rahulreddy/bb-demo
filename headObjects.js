@@ -13,7 +13,7 @@ const s3 = new AWS.S3({ signatureVersion: 'v4', });
 const BUCKET = 'bakery';
 
 const objects = [
-    'macaroon'
+    'macaroon',
     'candy',
     'gummy-bears',
     'gingerbread',
