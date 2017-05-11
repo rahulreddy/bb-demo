@@ -20,7 +20,7 @@ const objects = [
     'lollipop',
     'muffin',
     'fruitcake',
-    'soufflé',
+    'souffle',
     'croissant',
     'tootsie-roll',
     'liquorice',
