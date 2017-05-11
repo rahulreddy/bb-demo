@@ -30,7 +30,7 @@ const objects = [
 ];
 
 function headObject(key, cb) {
-    s3.headObject({ Bucket: BUCKET, Key: key }, cb)
+    s3.headObject({ Bucket: BUCKET, Key: key }, (err, res) => cb(err, { key, res }));
 }
 
 async.map(objects, headObject, (err, results) => {
