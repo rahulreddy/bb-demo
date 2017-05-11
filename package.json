@@ -1,0 +1,10 @@
+{
+  "name": "backbeat-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.4.0",
+    "aws-sdk": "^2.49.0"
+  }
+}
