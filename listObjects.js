@@ -10,7 +10,7 @@ AWS.config.update({
 
 const s3 = new AWS.S3({ signatureVersion: 'v4', });
 
-const listingParams = { Bucket: 'demo', };
+const listingParams = { Bucket: 'bakery', };
 s3.listObjects(listingParams, function(err, data) {
     if (err) {
         console.log('error listing objects', err);

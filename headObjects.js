@@ -10,7 +10,7 @@ AWS.config.update({
 });
 
 const s3 = new AWS.S3({ signatureVersion: 'v4', });
-const BUCKET = 'demo';
+const BUCKET = 'bakery';
 
 const objects = [
     'macaroon'
@@ -39,4 +39,4 @@ async.map(objects, headObject, (err, results) => {
         return;
     }
     console.log(results);
-}); 
+});
